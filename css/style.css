@@ -32,6 +32,11 @@ section {
     height: 100vh;
 }
 
+
+.toggle {
+    display: none;
+}
+
 .section-services {
     width: 100vw;
 }
@@ -111,14 +116,14 @@ nav{
     font-weight: 600;
 }
 
-ul {
+#open-toggle {
     margin-left: 90px;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-ul li {
+#open-toggle li {
     height: 100%;
     display: flex;
     align-items: center;
@@ -169,6 +174,7 @@ header {
     justify-content: center;
     background-color: var(--brand-green-light);
 }
+
 
 .card {
     display: flex;
@@ -514,6 +520,19 @@ footer {
     .contato-section .container , .sobre-section .container {
         flex-direction: column;
     }
+    
+    .toggle {
+        display: block;
+        background-image: url(/assets/Icon.svg);
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-fixed {
+        background-image: url(/assets/iconfixed.svg);
+        width: 40px;
+        height: 40px;
+    }
 
     .sobre {
         height: 100%;
@@ -524,8 +543,20 @@ footer {
         justify-content: center;
     }
 
-    nav ul, nav a  {
+    .aberto {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        background-color: #495057;
+    }
+
+    #open-toggle {
         margin-left: 0;
+        display: none;
+    }
+
+     .primary-button {
         display: none;
     }
 
@@ -673,6 +704,7 @@ footer {
         order: 2;
     }
     
+
     .contato .text-contato {
         font-size: 18px;
     }
@@ -694,5 +726,10 @@ footer {
         margin-top: 35px;
         width: 100%;
         justify-content: space-around;
+    }
+
+
+    .group img {
+        width: 200px;
     }
 }
