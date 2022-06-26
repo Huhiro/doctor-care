@@ -19,11 +19,12 @@ function toggleNav() {
 
   if (x.style.display === "none") {
     x.style.display = "flex";
+    y.style.display = "none"
     // x.style.marginLeft = "40px";
-    y.style.flexDirection = "column";
-    y.style.display = "flex";
-    y.style.lineHeight = "20px";
-    y.style.textAlign = "center";
+    // y.style.flexDirection = "column";
+    // y.style.display = "flex";
+    // y.style.lineHeight = "20px";
+    // y.style.textAlign = "center";
   } else {
     x.style.display = "none";
     y.style.display = "block";
